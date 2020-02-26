@@ -32,5 +32,6 @@ body{
 									}
 				}
 p{display:block;
+  font-family: sans-serif;
  font-size:36px;
  color: white;}
