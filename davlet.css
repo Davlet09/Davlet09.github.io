@@ -1,10 +1,10 @@
 body{
-				background-color: black;
-				}
+	background-color: black;
+}
 
 .out{
-				 margin-top: 120px;
-				 padding-top: 50px;
+	margin-top: 120px;
+	padding-top: 50px;
     border: 15px solid red;
     background-color: green;
     position: relative;
@@ -17,20 +17,21 @@ body{
 }
 
 .in{
-				border: 15px solid blue;
-				background-color: white;
-				width: 75px;
-				height: 75px;
-				}
+	border: 15px solid blue;
+	background-color: white;
+	width: 75px;
+	height: 75px;
+}
 @keyframes ha{
-				from{}
-				50%{
-								transform:rotate(180deg);
-								}
-					to{
-									transform:rotate(360deg);
-									}
-				}
+	from{}
+	50%{
+		transform:rotate(180deg);
+		}
+	to{
+		transform:rotate(360deg);
+		border-color: red;
+		}
+}
 p{display:block;
   font-family: sans-serif;
  font-size:88px;
