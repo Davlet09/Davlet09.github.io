@@ -29,7 +29,7 @@ body{
 		}
 	to{
 		transform:rotate(360deg);
-		border-color: green;
+		border-color: white;
 		}
 }
 p{display:block;
