@@ -38,11 +38,58 @@ h1{
 	display:block;
   	font-family: sans-serif;
  	font-size:72px;
-	color: white;
-	transition: 1s;
+	color: grey;
 }
 
-h1:hover{
-	height: 50%;
-	width: 120%;
-}
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+  }
+
+@keyframes rubberBand {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+	  transform: scale3d(1.25, 0.75, 1);
+	  color: white;
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+	  transform: scale3d(0.75, 1.25, 1);
+	  color: grey;
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+	  transform: scale3d(1.15, 0.85, 1);
+	  color: white;
+    }
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+	  transform: scale3d(0.95, 1.05, 1);
+	  color: grey;
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+	  transform: scale3d(1.05, 0.95, 1);
+	  color: white;
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+	  transform: scale3d(1, 1, 1);
+	  color: grey;
+    }
+  }
+  
+
